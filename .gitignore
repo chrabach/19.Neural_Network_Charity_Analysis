@@ -1,3 +1,27 @@
+#files I want to ignore
+19.2.2-4 19.3.3.ipynb
+19.4.2-4 DeepLearning_Tabular.ipynb
+19.5.2.LogisticRegression_NeuralNet.ipynb
+19.5.3.SVM_DeepLearning.ipynb
+19.5.4.RandomForest_DeepLearning.ipynb
+BCS_16.docx
+Controls.xlsx
+AlphabetSoupCharity_starter_code.ipynb
+optimization_working.ipynb
+kerastuner example.ipynb
+other_resources/trained_attrition.h5
+19.2.2-4_19.3.3-4.ipynb
+19.4.2-4_19.6.1 DeepLearning_Tabular.ipynb
+checkpoints/
+Resources/bank_telemarketing.csv
+Resources/diabetes.csv
+Resources/hr_dataset.csv
+Resources/HR-Employee-Attrition.csv
+Resources/loan_status.csv
+Resources/ramen-ratings.csv
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
