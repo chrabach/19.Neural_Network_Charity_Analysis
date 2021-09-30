@@ -96,3 +96,6 @@ In summary:
 ## Summary
 
 Ultimately, the model was unable to achieve a 75% accuracy rate, though it came close by using an optimizer with a good deal of latitude.  Even more improvement is made by dropping select factors, but not enough to achieve the 75% threshold.  A random forest classifier model will likely be more appropriate for this challenge, as its simplicity will likely outperform the costs of the deep neural network. 
+
+
+
