@@ -14,38 +14,6 @@ This analysis seeks to evaluate the risk of various donation recipients.  Specif
 
 
 
-In summary:
-- IS_SUCCESSFUL is the target of the model.
-- Independent variables are:
-	Affiliation
-	Classification
-	Use_Case
-	Organization
-	Status
-	Income_Amt
-	Special_Considerations
-	Ask_Amt
-- "Special_Considerations" and "Status" were both removed, serially and in combination.
-	Remove Special considerations:
-		Accuracy = 73%.  No improvement.
-		
-![Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png)
-[Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png?raw=true "Fig6: Special Considerations Removal")
-		
-		
-	Remove Status:
-		Accuracy = 73%.  No improvement.
-		
-		![Fig7: Status Removal](other_resources/07_drop_status.png)
-		[Fig7: Status Removal](other_resources/07_drop_status.png?raw=true "Fig7: Status Removal")
-		
-
-	Remove Both:
-		Accuracy = 74%.  Slight improvement.
-		
-		![Fig8: Status and Special Considerations Removal](other_resources/08_drop_special_considerations_and_status.png)
-		[Fig8: Status and Special Considerations Removal](other_resources/08_drop_special_considerations_and_status.png?raw=true "Fig8: Status and Special Considerations Removal")
-
 - The neural network was selected according to the logic below: 
 
 
@@ -85,26 +53,42 @@ This model is indicated to have 7 input units, with 7 hidden layers, with the nu
 ![Fig5c: Optimized 20 epochs Model](other_resources/05b.Optimized_Model.png)
 [Fig5c: Optimized 20 epochs Model](other_resources/05b.Optimized_Model.png?raw=true "Fig5c: Optimized 20 epochs Model")
 
-Figure 5c shows the degrees of freedom afforded the optimizer.  First units are allowed to be anywhere between 1 and 8, with any of relu, tanh, or sigmoid as activation functions.  The number of hidden layers can be anywhere between 1 and 8 deep, with each layer between 1 and 50 neurons. 
+Figure 5c shows the degrees of freedom afforded the optimizer.  First units are allowed to be anywhere between 1 and 8, with any of relu, tanh, or sigmoid as activation functions.  The number of hidden layers can be anywhere between 1 and 8 deep, with each layer between 1 and 50 neurons.
 
 
 
 
+In summary:
+- IS_SUCCESSFUL is the target of the model.
+- Independent variables are:
+	Affiliation
+	Classification
+	Use_Case
+	Organization
+	Status
+	Income_Amt
+	Special_Considerations
+	Ask_Amt
+- "Special_Considerations" and "Status" were both removed, serially and in combination.
+	Remove Special considerations:
+		Accuracy = 73%.  No improvement.
+		
+![Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png)
+[Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png?raw=true "Fig6: Special Considerations Removal")
+		
+		
+	Remove Status:
+		Accuracy = 73%.  No improvement.
+		
+![Fig7: Status Removal](other_resources/07_drop_status.png)
+[Fig7: Status Removal](other_resources/07_drop_status.png?raw=true "Fig7: Status Removal")
+		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	Remove Both:
+		Accuracy = 74%.  Slight improvement.
+		
+![Fig8: Status and Special Considerations Removal](other_resources/08_drop_special_considerations_and_status.png)
+[Fig8: Status and Special Considerations Removal](other_resources/08_drop_special_considerations_and_status.png?raw=true "Fig8: Status and Special Considerations Removal")
 
 
 
