@@ -29,8 +29,8 @@ In summary:
 	Remove Special considerations:
 		Accuracy = 73%.  No improvement.
 		
-		![Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png)
-		[Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png?raw=true "Fig6: Special Considerations Removal")
+![Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png)
+[Fig6: Special Considerations Removal](other_resources/06_drop_special_considerations.png?raw=true "Fig6: Special Considerations Removal")
 		
 		
 	Remove Status:
